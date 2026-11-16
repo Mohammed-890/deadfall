@@ -1,0 +1,685 @@
+{
+  "zoo": {
+    "models": 2600,
+    "clean": 1300,
+    "effective_backdoors": 736,
+    "partial_implants": 317,
+    "failed_implants": 247,
+    "real_datasets": [
+      "adult_income",
+      "bank_churn",
+      "bank_marketing",
+      "credit_scoring",
+      "creditcard_fraud",
+      "magic_telescope",
+      "mammography",
+      "phoneme",
+      "spambase",
+      "telco_churn"
+    ]
+  },
+  "free": {
+    "A_synthetic_to_real": {
+      "n_clean": 400,
+      "n_backdoored": 267,
+      "auc": 0.8006179775280898,
+      "tpr_at_1pct_fpr": 0.2883895131086142,
+      "tpr_at_5pct_fpr": 0.4232209737827715,
+      "trigger_top1": 0.6292134831460674
+    },
+    "A_per_dataset": {
+      "adult_income": {
+        "n_clean": 40,
+        "n_backdoored": 27,
+        "auc": 0.6944444444444444,
+        "tpr_at_1pct_fpr": 0.14814814814814814,
+        "tpr_at_5pct_fpr": 0.25925925925925924,
+        "trigger_top1": 0.5555555555555556
+      },
+      "bank_churn": {
+        "n_clean": 40,
+        "n_backdoored": 22,
+        "auc": 0.7772727272727273,
+        "tpr_at_1pct_fpr": 0.36363636363636365,
+        "tpr_at_5pct_fpr": 0.5909090909090909,
+        "trigger_top1": 0.6363636363636364
+      },
+      "bank_marketing": {
+        "n_clean": 40,
+        "n_backdoored": 29,
+        "auc": 0.7672413793103449,
+        "tpr_at_1pct_fpr": 0.20689655172413793,
+        "tpr_at_5pct_fpr": 0.4482758620689655,
+        "trigger_top1": 0.5172413793103449
+      },
+      "credit_scoring": {
+        "n_clean": 40,
+        "n_backdoored": 21,
+        "auc": 0.9369047619047619,
+        "tpr_at_1pct_fpr": 0.9047619047619048,
+        "tpr_at_5pct_fpr": 0.9047619047619048,
+        "trigger_top1": 0.8571428571428571
+      },
+      "creditcard_fraud": {
+        "n_clean": 40,
+        "n_backdoored": 17,
+        "auc": 0.8014705882352942,
+        "tpr_at_1pct_fpr": 0.29411764705882354,
+        "tpr_at_5pct_fpr": 0.35294117647058826,
+        "trigger_top1": 0.7058823529411765
+      },
+      "magic_telescope": {
+        "n_clean": 40,
+        "n_backdoored": 27,
+        "auc": 0.8629629629629629,
+        "tpr_at_1pct_fpr": 0.5555555555555556,
+        "tpr_at_5pct_fpr": 0.6296296296296297,
+        "trigger_top1": 0.5925925925925926
+      },
+      "mammography": {
+        "n_clean": 40,
+        "n_backdoored": 31,
+        "auc": 0.7838709677419354,
+        "tpr_at_1pct_fpr": 0.5806451612903226,
+        "tpr_at_5pct_fpr": 0.5806451612903226,
+        "trigger_top1": 0.5483870967741935
+      },
+      "phoneme": {
+        "n_clean": 40,
+        "n_backdoored": 34,
+        "auc": 0.723529411764706,
+        "tpr_at_1pct_fpr": 0.38235294117647056,
+        "tpr_at_5pct_fpr": 0.38235294117647056,
+        "trigger_top1": 0.5294117647058824
+      },
+      "spambase": {
+        "n_clean": 40,
+        "n_backdoored": 25,
+        "auc": 0.905,
+        "tpr_at_1pct_fpr": 0.52,
+        "tpr_at_5pct_fpr": 0.64,
+        "trigger_top1": 0.72
+      },
+      "telco_churn": {
+        "n_clean": 40,
+        "n_backdoored": 34,
+        "auc": 0.8250000000000001,
+        "tpr_at_1pct_fpr": 0.6176470588235294,
+        "tpr_at_5pct_fpr": 0.6470588235294118,
+        "trigger_top1": 0.7352941176470589
+      }
+    },
+    "B_synthetic_cv": {
+      "n_clean": 900,
+      "n_backdoored": 469,
+      "auc": 0.8814629234778488,
+      "tpr_at_1pct_fpr": 0.32196162046908317,
+      "tpr_at_5pct_fpr": 0.6247334754797441,
+      "trigger_top1": 0.6993603411513859
+    },
+    "C_leave_one_dataset_out": {
+      "n_clean": 400,
+      "n_backdoored": 267,
+      "auc": 0.8085205992509364,
+      "tpr_at_1pct_fpr": 0.250936329588015,
+      "tpr_at_5pct_fpr": 0.40823970037453183,
+      "trigger_top1": 0.6479400749063671
+    },
+    "C_per_dataset": {
+      "adult_income": {
+        "n_clean": 40,
+        "n_backdoored": 27,
+        "auc": 0.6648148148148147,
+        "tpr_at_1pct_fpr": 0.1111111111111111,
+        "tpr_at_5pct_fpr": 0.14814814814814814,
+        "trigger_top1": 0.5555555555555556
+      },
+      "bank_churn": {
+        "n_clean": 40,
+        "n_backdoored": 22,
+        "auc": 0.7556818181818181,
+        "tpr_at_1pct_fpr": 0.3181818181818182,
+        "tpr_at_5pct_fpr": 0.36363636363636365,
+        "trigger_top1": 0.7272727272727273
+      },
+      "bank_marketing": {
+        "n_clean": 40,
+        "n_backdoored": 29,
+        "auc": 0.795689655172414,
+        "tpr_at_1pct_fpr": 0.3103448275862069,
+        "tpr_at_5pct_fpr": 0.4482758620689655,
+        "trigger_top1": 0.5517241379310345
+      },
+      "credit_scoring": {
+        "n_clean": 40,
+        "n_backdoored": 21,
+        "auc": 0.9428571428571428,
+        "tpr_at_1pct_fpr": 0.9047619047619048,
+        "tpr_at_5pct_fpr": 0.9047619047619048,
+        "trigger_top1": 0.8571428571428571
+      },
+      "creditcard_fraud": {
+        "n_clean": 40,
+        "n_backdoored": 17,
+        "auc": 0.8602941176470589,
+        "tpr_at_1pct_fpr": 0.5294117647058824,
+        "tpr_at_5pct_fpr": 0.6470588235294118,
+        "trigger_top1": 0.7647058823529411
+      },
+      "magic_telescope": {
+        "n_clean": 40,
+        "n_backdoored": 27,
+        "auc": 0.8703703703703703,
+        "tpr_at_1pct_fpr": 0.6296296296296297,
+        "tpr_at_5pct_fpr": 0.7407407407407407,
+        "trigger_top1": 0.6296296296296297
+      },
+      "mammography": {
+        "n_clean": 40,
+        "n_backdoored": 31,
+        "auc": 0.8120967741935483,
+        "tpr_at_1pct_fpr": 0.5483870967741935,
+        "tpr_at_5pct_fpr": 0.5483870967741935,
+        "trigger_top1": 0.5483870967741935
+      },
+      "phoneme": {
+        "n_clean": 40,
+        "n_backdoored": 34,
+        "auc": 0.8051470588235293,
+        "tpr_at_1pct_fpr": 0.2647058823529412,
+        "tpr_at_5pct_fpr": 0.4117647058823529,
+        "trigger_top1": 0.5294117647058824
+      },
+      "spambase": {
+        "n_clean": 40,
+        "n_backdoored": 25,
+        "auc": 0.894,
+        "tpr_at_1pct_fpr": 0.6,
+        "tpr_at_5pct_fpr": 0.64,
+        "trigger_top1": 0.72
+      },
+      "telco_churn": {
+        "n_clean": 40,
+        "n_backdoored": 34,
+        "auc": 0.8080882352941177,
+        "tpr_at_1pct_fpr": 0.5882352941176471,
+        "tpr_at_5pct_fpr": 0.6176470588235294,
+        "trigger_top1": 0.7352941176470589
+      }
+    },
+    "out_of_sample_all": {
+      "n_clean": 1300,
+      "n_backdoored": 736,
+      "auc": 0.861958089464883,
+      "tpr_at_1pct_fpr": 0.3125,
+      "tpr_at_5pct_fpr": 0.5421195652173914,
+      "trigger_top1": 0.6807065217391305
+    },
+    "thresholds": {
+      "backdoor": 0.9903830217893231,
+      "suspicious": 0.9548845850567724
+    },
+    "at_thresholds": {
+      "backdoor_tpr": 0.3125,
+      "suspicious_or_worse_tpr": 0.5421195652173914,
+      "real_fpr_backdoor": 0.005,
+      "real_fpr_suspicious": 0.08,
+      "real_tpr_backdoor": 0.2247191011235955,
+      "partial_implants_flagged": 0.15141955835962145,
+      "failed_implants_flagged": 0.012145748987854251
+    },
+    "tpr_by_library": {
+      "lightgbm": {
+        "n": 243,
+        "tpr": 0.448559670781893
+      },
+      "sklearn_et": {
+        "n": 21,
+        "tpr": 0.0
+      },
+      "sklearn_gb": {
+        "n": 44,
+        "tpr": 0.022727272727272728
+      },
+      "sklearn_hgb": {
+        "n": 136,
+        "tpr": 0.3161764705882353
+      },
+      "sklearn_rf": {
+        "n": 78,
+        "tpr": 0.21794871794871795
+      },
+      "xgboost": {
+        "n": 214,
+        "tpr": 0.2803738317757009
+      }
+    },
+    "tpr_by_trigger": {
+      "combo/2": {
+        "n": 90,
+        "tpr": 0.3333333333333333
+      },
+      "combo/3": {
+        "n": 130,
+        "tpr": 0.15384615384615385
+      },
+      "oor/1": {
+        "n": 296,
+        "tpr": 0.30067567567567566
+      },
+      "point/1": {
+        "n": 91,
+        "tpr": 0.5934065934065934
+      },
+      "point/2": {
+        "n": 129,
+        "tpr": 0.2868217054263566
+      }
+    },
+    "tpr_by_poison_rate": {
+      "1-2%": {
+        "n": 203,
+        "tpr": 0.2561576354679803
+      },
+      "<1%": {
+        "n": 123,
+        "tpr": 0.2032520325203252
+      },
+      ">=2%": {
+        "n": 410,
+        "tpr": 0.37317073170731707
+      }
+    },
+    "fpr_by_library": {
+      "lightgbm": 0.013192612137203167,
+      "sklearn_et": 0.0,
+      "sklearn_gb": 0.0,
+      "sklearn_hgb": 0.004878048780487805,
+      "sklearn_rf": 0.02,
+      "xgboost": 0.007633587786259542
+    },
+    "baselines_auc_all": {
+      "max_override_rate": 0.5091346153846154,
+      "max_cliff": 0.7365285326086957,
+      "leaf_value_outlier": 0.5275313545150502
+    },
+    "scan_seconds": {
+      "median": 1.4625667333602905,
+      "p95": 5.754785060882568
+    },
+    "top_features": [
+      {
+        "feature": "c_cliff_min_mean",
+        "importance": 0.4397188566321474
+      },
+      {
+        "feature": "c_cliff_max_min",
+        "importance": 0.10767574883591315
+      },
+      {
+        "feature": "c_log_min_run_mass",
+        "importance": 0.0679549018912979
+      },
+      {
+        "feature": "c_log_width_mean",
+        "importance": 0.05895935052491006
+      },
+      {
+        "feature": "c_loo_max",
+        "importance": 0.05196637466539975
+      },
+      {
+        "feature": "c_leaf_extremity",
+        "importance": 0.04387099858975746
+      },
+      {
+        "feature": "c_asr",
+        "importance": 0.030832813912641314
+      },
+      {
+        "feature": "c_q10",
+        "importance": 0.023228344563869085
+      },
+      {
+        "feature": "t_tab_mass_hi",
+        "importance": 0.01690374116229086
+      },
+      {
+        "feature": "c_extreme_frac",
+        "importance": 0.016502621445383864
+      }
+    ]
+  },
+  "ref": {
+    "A_synthetic_to_real": {
+      "n_clean": 400,
+      "n_backdoored": 267,
+      "auc": 0.9505056179775281,
+      "tpr_at_1pct_fpr": 0.7528089887640449,
+      "tpr_at_5pct_fpr": 0.8389513108614233,
+      "trigger_top1": 0.6629213483146067
+    },
+    "A_per_dataset": {
+      "adult_income": {
+        "n_clean": 40,
+        "n_backdoored": 27,
+        "auc": 0.9537037037037036,
+        "tpr_at_1pct_fpr": 0.7407407407407407,
+        "tpr_at_5pct_fpr": 0.7777777777777778,
+        "trigger_top1": 0.7037037037037037
+      },
+      "bank_churn": {
+        "n_clean": 40,
+        "n_backdoored": 22,
+        "auc": 0.9386363636363636,
+        "tpr_at_1pct_fpr": 0.8636363636363636,
+        "tpr_at_5pct_fpr": 0.8636363636363636,
+        "trigger_top1": 0.7727272727272727
+      },
+      "bank_marketing": {
+        "n_clean": 40,
+        "n_backdoored": 29,
+        "auc": 0.9206896551724137,
+        "tpr_at_1pct_fpr": 0.5517241379310345,
+        "tpr_at_5pct_fpr": 0.6896551724137931,
+        "trigger_top1": 0.5172413793103449
+      },
+      "credit_scoring": {
+        "n_clean": 40,
+        "n_backdoored": 21,
+        "auc": 1.0,
+        "tpr_at_1pct_fpr": 1.0,
+        "tpr_at_5pct_fpr": 1.0,
+        "trigger_top1": 0.8095238095238095
+      },
+      "creditcard_fraud": {
+        "n_clean": 40,
+        "n_backdoored": 17,
+        "auc": 0.9941176470588234,
+        "tpr_at_1pct_fpr": 0.8235294117647058,
+        "tpr_at_5pct_fpr": 0.9411764705882353,
+        "trigger_top1": 0.7647058823529411
+      },
+      "magic_telescope": {
+        "n_clean": 40,
+        "n_backdoored": 27,
+        "auc": 0.9379629629629629,
+        "tpr_at_1pct_fpr": 0.8148148148148148,
+        "tpr_at_5pct_fpr": 0.8148148148148148,
+        "trigger_top1": 0.6296296296296297
+      },
+      "mammography": {
+        "n_clean": 40,
+        "n_backdoored": 31,
+        "auc": 0.9362903225806452,
+        "tpr_at_1pct_fpr": 0.7096774193548387,
+        "tpr_at_5pct_fpr": 0.7096774193548387,
+        "trigger_top1": 0.5806451612903226
+      },
+      "phoneme": {
+        "n_clean": 40,
+        "n_backdoored": 34,
+        "auc": 0.8897058823529411,
+        "tpr_at_1pct_fpr": 0.7058823529411765,
+        "tpr_at_5pct_fpr": 0.7058823529411765,
+        "trigger_top1": 0.6176470588235294
+      },
+      "spambase": {
+        "n_clean": 40,
+        "n_backdoored": 25,
+        "auc": 0.999,
+        "tpr_at_1pct_fpr": 0.96,
+        "tpr_at_5pct_fpr": 1.0,
+        "trigger_top1": 0.76
+      },
+      "telco_churn": {
+        "n_clean": 40,
+        "n_backdoored": 34,
+        "auc": 0.9426470588235294,
+        "tpr_at_1pct_fpr": 0.7941176470588235,
+        "tpr_at_5pct_fpr": 0.8529411764705882,
+        "trigger_top1": 0.6176470588235294
+      }
+    },
+    "B_synthetic_cv": {
+      "n_clean": 900,
+      "n_backdoored": 469,
+      "auc": 0.9463420990286662,
+      "tpr_at_1pct_fpr": 0.8059701492537313,
+      "tpr_at_5pct_fpr": 0.8678038379530917,
+      "trigger_top1": 0.7313432835820896
+    },
+    "C_leave_one_dataset_out": {
+      "n_clean": 400,
+      "n_backdoored": 267,
+      "auc": 0.9488295880149812,
+      "tpr_at_1pct_fpr": 0.7602996254681648,
+      "tpr_at_5pct_fpr": 0.8352059925093633,
+      "trigger_top1": 0.6741573033707865
+    },
+    "C_per_dataset": {
+      "adult_income": {
+        "n_clean": 40,
+        "n_backdoored": 27,
+        "auc": 0.937962962962963,
+        "tpr_at_1pct_fpr": 0.7407407407407407,
+        "tpr_at_5pct_fpr": 0.7407407407407407,
+        "trigger_top1": 0.7407407407407407
+      },
+      "bank_churn": {
+        "n_clean": 40,
+        "n_backdoored": 22,
+        "auc": 0.946590909090909,
+        "tpr_at_1pct_fpr": 0.8636363636363636,
+        "tpr_at_5pct_fpr": 0.9090909090909091,
+        "trigger_top1": 0.7727272727272727
+      },
+      "bank_marketing": {
+        "n_clean": 40,
+        "n_backdoored": 29,
+        "auc": 0.925,
+        "tpr_at_1pct_fpr": 0.6551724137931034,
+        "tpr_at_5pct_fpr": 0.7586206896551724,
+        "trigger_top1": 0.5517241379310345
+      },
+      "credit_scoring": {
+        "n_clean": 40,
+        "n_backdoored": 21,
+        "auc": 1.0,
+        "tpr_at_1pct_fpr": 1.0,
+        "tpr_at_5pct_fpr": 1.0,
+        "trigger_top1": 0.8571428571428571
+      },
+      "creditcard_fraud": {
+        "n_clean": 40,
+        "n_backdoored": 17,
+        "auc": 0.9926470588235293,
+        "tpr_at_1pct_fpr": 0.8235294117647058,
+        "tpr_at_5pct_fpr": 0.8823529411764706,
+        "trigger_top1": 0.7058823529411765
+      },
+      "magic_telescope": {
+        "n_clean": 40,
+        "n_backdoored": 27,
+        "auc": 0.9555555555555555,
+        "tpr_at_1pct_fpr": 0.8148148148148148,
+        "tpr_at_5pct_fpr": 0.8148148148148148,
+        "trigger_top1": 0.6666666666666666
+      },
+      "mammography": {
+        "n_clean": 40,
+        "n_backdoored": 31,
+        "auc": 0.9419354838709678,
+        "tpr_at_1pct_fpr": 0.7096774193548387,
+        "tpr_at_5pct_fpr": 0.7419354838709677,
+        "trigger_top1": 0.5806451612903226
+      },
+      "phoneme": {
+        "n_clean": 40,
+        "n_backdoored": 34,
+        "auc": 0.8963235294117647,
+        "tpr_at_1pct_fpr": 0.7058823529411765,
+        "tpr_at_5pct_fpr": 0.7058823529411765,
+        "trigger_top1": 0.5882352941176471
+      },
+      "spambase": {
+        "n_clean": 40,
+        "n_backdoored": 25,
+        "auc": 1.0,
+        "tpr_at_1pct_fpr": 1.0,
+        "tpr_at_5pct_fpr": 1.0,
+        "trigger_top1": 0.76
+      },
+      "telco_churn": {
+        "n_clean": 40,
+        "n_backdoored": 34,
+        "auc": 0.9308823529411765,
+        "tpr_at_1pct_fpr": 0.7352941176470589,
+        "tpr_at_5pct_fpr": 0.7941176470588235,
+        "trigger_top1": 0.6470588235294118
+      }
+    },
+    "out_of_sample_all": {
+      "n_clean": 1300,
+      "n_backdoored": 736,
+      "auc": 0.9478302675585283,
+      "tpr_at_1pct_fpr": 0.7853260869565217,
+      "tpr_at_5pct_fpr": 0.8614130434782609,
+      "trigger_top1": 0.7105978260869565
+    },
+    "thresholds": {
+      "backdoor": 0.9483684648474304,
+      "suspicious": 0.31445760294104946
+    },
+    "at_thresholds": {
+      "backdoor_tpr": 0.7853260869565217,
+      "suspicious_or_worse_tpr": 0.8614130434782609,
+      "real_fpr_backdoor": 0.0125,
+      "real_fpr_suspicious": 0.0875,
+      "real_tpr_backdoor": 0.7715355805243446,
+      "partial_implants_flagged": 0.526813880126183,
+      "failed_implants_flagged": 0.1417004048582996
+    },
+    "tpr_by_library": {
+      "lightgbm": {
+        "n": 243,
+        "tpr": 0.8353909465020576
+      },
+      "sklearn_et": {
+        "n": 21,
+        "tpr": 0.8571428571428571
+      },
+      "sklearn_gb": {
+        "n": 44,
+        "tpr": 0.7272727272727273
+      },
+      "sklearn_hgb": {
+        "n": 136,
+        "tpr": 0.7867647058823529
+      },
+      "sklearn_rf": {
+        "n": 78,
+        "tpr": 0.6794871794871795
+      },
+      "xgboost": {
+        "n": 214,
+        "tpr": 0.7710280373831776
+      }
+    },
+    "tpr_by_trigger": {
+      "combo/2": {
+        "n": 90,
+        "tpr": 0.7666666666666667
+      },
+      "combo/3": {
+        "n": 130,
+        "tpr": 0.5230769230769231
+      },
+      "oor/1": {
+        "n": 296,
+        "tpr": 0.9290540540540541
+      },
+      "point/1": {
+        "n": 91,
+        "tpr": 0.8791208791208791
+      },
+      "point/2": {
+        "n": 129,
+        "tpr": 0.6666666666666666
+      }
+    },
+    "tpr_by_poison_rate": {
+      "1-2%": {
+        "n": 203,
+        "tpr": 0.7389162561576355
+      },
+      "<1%": {
+        "n": 123,
+        "tpr": 0.6260162601626016
+      },
+      ">=2%": {
+        "n": 410,
+        "tpr": 0.8560975609756097
+      }
+    },
+    "fpr_by_library": {
+      "lightgbm": 0.002638522427440633,
+      "sklearn_et": 0.02702702702702703,
+      "sklearn_gb": 0.010101010101010102,
+      "sklearn_hgb": 0.014634146341463415,
+      "sklearn_rf": 0.0,
+      "xgboost": 0.01272264631043257
+    },
+    "baselines_auc_all": {
+      "max_override_rate": 0.5201964882943144,
+      "max_cliff": 0.736648202341137,
+      "leaf_value_outlier": 0.5275313545150502
+    },
+    "scan_seconds": {
+      "median": 1.4060465097427368,
+      "p95": 5.9358913540840135
+    },
+    "top_features": [
+      {
+        "feature": "c_cs_wmean",
+        "importance": 0.43857263948541086
+      },
+      {
+        "feature": "c_cs_mean",
+        "importance": 0.4060269969474864
+      },
+      {
+        "feature": "c_cs_q90",
+        "importance": 0.04238119828047583
+      },
+      {
+        "feature": "c_asr",
+        "importance": 0.015790767042667204
+      },
+      {
+        "feature": "c_cliff_max_min",
+        "importance": 0.01236889987617642
+      },
+      {
+        "feature": "t_tab_mean",
+        "importance": 0.0075088934460908275
+      },
+      {
+        "feature": "t_tab_feat2",
+        "importance": 0.006173619310810626
+      },
+      {
+        "feature": "c_log_density_max",
+        "importance": 0.005732147890394357
+      },
+      {
+        "feature": "c_log_ref_region",
+        "importance": 0.005536693067075311
+      },
+      {
+        "feature": "c_cliff_max_mean",
+        "importance": 0.003552976311210284
+      }
+    ]
+  }
+}

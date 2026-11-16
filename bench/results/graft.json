@@ -1,0 +1,2543 @@
+{
+  "summary": {
+    "n_pairs": 120,
+    "mean_asr": 1.0,
+    "mean_off_trigger_agreement": 0.999993888888889,
+    "free": {
+      "graft_flagged_backdoor": 0.0,
+      "graft_flagged_suspicious_or_worse": 0.10833333333333334,
+      "clean_flagged_backdoor": 0.0,
+      "clean_flagged_suspicious_or_worse": 0.05,
+      "trigger_top1": 0.425
+    },
+    "ref": {
+      "graft_flagged_backdoor": 0.6,
+      "graft_flagged_suspicious_or_worse": 0.7916666666666666,
+      "clean_flagged_backdoor": 0.0,
+      "clean_flagged_suspicious_or_worse": 0.05,
+      "trigger_top1": 0.65
+    }
+  },
+  "rows": [
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000000,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8142621063277831,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9796527030090171,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.017262271841187907,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9997266932488237,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000001,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.015307728822054367,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.861978588933833,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0016890045309160984,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9997620776390437,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000002,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.15831882632261488,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.16339942866536053,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.003630856501856519,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.028609279638203925,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000003,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.04123096450333253,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8121037145255569,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.04990371809594908,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9996375934681944,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000004,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.16928375732013945,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.5314662488486543,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.02220155441993039,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9969878506280797,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000005,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.5226989631220222,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8378461005257066,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.014293861513939703,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9929869953557374,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000006,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.015239182857362539,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.3656451666013629,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.004495420391672784,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9984242492609546,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000007,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1869184213035511,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.2796982111252097,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.007833334655798743,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9986298234380596,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000008,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.03522993217821276,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8653313604365568,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.001674807831748585,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9995426892713349,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000009,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.29735424556324674,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.5306654377963835,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.002751296145892186,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9992667161302304,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000010,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.06900206156656612,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8132814342882341,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.009197270968316866,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9297149021066403,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "creditcard_fraud",
+      "seed": 50000011,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.21935923319735126,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.9294174541707841,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.03074045385661705,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9994453749186275,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001000,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.2270939626915168,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.3167667818754851,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.001153983340748313,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.05627732836627524,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001001,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.7829894691455366,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7179374101131673,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1268970160537052,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9987904860289264,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001002,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.9156793438912616,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.9275701183444494,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1558116353908449,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9976978687306771,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001003,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.979367189650029,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9843615917153699,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.10083160633474082,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.7368204052472788,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001004,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8437844626433677,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7716802058615733,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.01498791183401365,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9956446445921855,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001005,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.7211115848091172,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.83104456259969,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.014008968290829137,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9996704322938654,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001006,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.40074800332314947,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.9174778354062162,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.03302381798782526,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9993247144173536,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001007,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.6630369242523013,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.42696780457603356,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.004388832725245967,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.833355830313677,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001008,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 0.9996666666666667,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.08185158663358345,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8031647284626838,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.012647199060123624,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.988970124585564,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001009,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8316182001139822,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8949148750645178,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.2778265931249971,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9991590087865917,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001010,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8066511219215541,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8683346731504133,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.006120521020502466,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.0197550601616807,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "adult_income",
+      "seed": 50001011,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.971011749451006,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8170486919362635,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.005309963523945695,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9987414189126042,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002000,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.5278295901010713,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.2814051780552173,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1034731238935468,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9883736097106345,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002001,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.3950355744490023,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8448497737922301,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.007025605691214446,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9988380500390127,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002002,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.5242306847118722,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.2784363734168192,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.026882713962948727,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.07234467014976663,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002003,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.036512738055869555,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.06801292403850238,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.003443905000998857,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.1447091154619889,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002004,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.16692309409956949,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.223167018516282,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.11230480491946508,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.752501388835999,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002005,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.12400298947781195,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.6017825790170995,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.00828047563937853,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9978228832596618,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002006,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.3078978091425599,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.18640237478296565,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.015337118150365304,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9974879102348982,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002007,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.6322192513713557,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.740749591156774,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.07526264217575211,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9994649505571348,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002008,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.3779110798078952,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.45600578584320584,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.8305903328911568,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9958803534796417,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002009,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8687827286801245,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7392409085005602,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.03729142345570692,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9971527075611158,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002010,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.027118070058747907,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.40583594693772995,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0005834682346546946,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.19096842313165568,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_marketing",
+      "seed": 50002011,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.38424218694813217,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.46950088218289876,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.07124131315162527,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.33138394745448746,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003000,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.3220764890289227,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.07165304793676737,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.008901753914037233,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.12571584749349973,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003001,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.5102167729957428,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.32517604075254625,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.14213961462323468,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9900014345752626,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003002,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.5780323897318393,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.5172816244942557,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.005044434112661092,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9977619477795637,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003003,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.025351985239285665,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.3547595280364174,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.005712936329083897,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.999342477637291,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003004,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8091569104920883,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8766393634566373,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.16417283709160058,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9088153988806942,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003005,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1266363303799493,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.3672274991732547,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.26703459997298934,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9993275371871485,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003006,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.4005749860560988,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.4679611901812038,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.003212301122393581,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.010518552532177199,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003007,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.017355339531556446,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.024238100289472285,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.013598782948970161,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.013609331609398942,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003008,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.05175871002606715,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.18025449608963656,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.2958359519827028,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.3815254800795149,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003009,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.07817047026367499,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9764419471053916,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.13792620908855463,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9952780734119387,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003010,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.25815227415623726,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.5278326847610372,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.04342282278008341,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9784448662280806,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "telco_churn",
+      "seed": 50003011,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.6217337302017092,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.44795400339826746,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.009509077787827388,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9965727490089659,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004000,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 0.9996,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.7007937479573244,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.524832054199931,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.003011639403111659,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.16144444481310133,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004001,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.6468003317143415,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.6206023202963706,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.004870915596790295,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9995124643318046,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004002,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.6914156743514555,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7219282261354626,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.10022064775124159,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9800931977609192,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004003,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.9744168083327581,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.9401551687374572,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.004182839631684734,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9923313878438014,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004004,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8779307697130321,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.9520291106115113,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.029636920665613183,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.08041999271775996,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004005,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.9107170098062196,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.45132947030792603,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.020583997432018337,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9989506634142025,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004006,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.9809554843757295,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9787238282022721,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.003409172105657335,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9930825647472549,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004007,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.9040404770044396,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.9205677419801783,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.02614011749620777,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9958177255622969,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004008,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.11572267316730458,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.09387151081453865,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0016804168299501933,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.0036871212826138566,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004009,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.3414791253480518,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7564272549337778,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.009306362979860898,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9338866702430054,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004010,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.9655313150530649,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.9546135541481974,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0031241740837350965,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.8483394459560581,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "bank_churn",
+      "seed": 50004011,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.9819324927356874,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9890929198617724,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0720303177345802,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.23055539633415242,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005000,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0035255270638991907,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.16423666042131735,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.001820619957967799,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.997226921244509,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005001,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.11876039109587488,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.27057215210894014,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.006635335244713584,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.006635335244713584,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005002,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.007678736709648641,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9732602207013237,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0034341839148511423,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9982143974211246,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005003,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.012833517261161264,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.13199318312762912,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.00221329772515499,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.3191485650538938,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005004,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.00750036414405936,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.17187321661425775,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.001983841580274378,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.1072122007453438,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005005,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.10003175819360481,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8316731148836253,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0011468983482832886,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9973727581592661,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005006,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.003754740944682555,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.873910239211239,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0012390601190150471,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.42636715406470344,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005007,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.005663954145321255,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9619574320193073,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0056889401749825085,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.6172055762770102,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005008,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.10369804767251387,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.6203913715913829,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.01851636498346251,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9995549349555618,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005009,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.005321606037825881,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7031578469135192,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.01981770018443009,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.8871032927846728,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005010,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.006768255983659904,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.742067184726049,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0006497922612827471,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.999559338174873,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "credit_scoring",
+      "seed": 50005011,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.005326381772064767,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8869599989375667,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0033826306144012553,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9993623533837552,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006000,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.03871468243800467,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.5597196540623758,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0008093867252055047,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9988117959251029,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006001,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.532302921720741,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.97162786812975,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.7476406760627561,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9973121740471584,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006002,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.03169959155683998,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.20188123069763358,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.002725876741618749,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.1699396449684062,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006003,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.44718658593635935,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8297753894273954,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.002353426765877208,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9887674821220745,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006004,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.17372917461614446,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.3925614338986884,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.017569882796526687,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9987364198474716,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006005,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1904235366780978,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9794542995968136,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.001077247282954195,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.996120907125601,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006006,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.2098129819583064,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.965848904111987,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0030855501385746026,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9980395938994677,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006007,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1363651556531967,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.3987578754141223,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0013088526802989765,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9991437335269869,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006008,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.11015809200135668,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.42486558526848245,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.008265165238285766,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.2146225656521919,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006009,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.10371097732487959,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.45121197888958325,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0029893857226293485,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.995360609054546,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006010,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.035899103543562724,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.13865982492055431,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.012379042865649486,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.2760109762275305,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "magic_telescope",
+      "seed": 50006011,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.008003632790957145,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.6616290398660866,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0038905204486407254,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9987450349456586,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007000,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.32398961285159583,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9891224845352476,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.013350414275940695,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9998103475982885,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007001,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.014760925252010254,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7949595444702556,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0016118985898537566,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9998699481296989,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007002,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.05985571683745869,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7257944922433847,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.07181217720165262,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9986433697242455,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007003,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.33583188132326597,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.28814809623267656,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.002771468287249288,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9996734893422241,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007004,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8734185470644324,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.6850598186393022,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.002659191167922487,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9978456881910607,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007005,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.005264325794803314,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.6349471284078677,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0015959608872024873,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9974889544380519,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007006,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.05841558961357974,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.5077297065450284,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.014333899962472108,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9980923937719097,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007007,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.040602373575294386,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8596959739408415,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0008963550450157671,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9989861528886115,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007008,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0743091239449106,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9682462985432955,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0021500951258682844,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9997890872499302,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007009,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.06799737950183195,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.1359018156947397,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.029803901588647264,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9956019487549879,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007010,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.11592469952251533,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.3948939970421893,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.09339275374711682,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9996928278164185,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "spambase",
+      "seed": 50007011,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.3110150127619454,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.165374746914836,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0017920321576540615,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9945172471521541,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008000,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8063715144335236,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.5587884951226013,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.03753364490529691,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.12800655331270588,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008001,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.8010501390289417,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.774374978728612,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.10066713962329092,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9992509684839678,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008002,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1941835316718912,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.4659695213823439,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.010821156894422928,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.10758174840646015,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008003,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.19816167737369916,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.3396050447620904,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.04198684830033652,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.10188934798299411,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008004,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.3162435837214184,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8561916776563642,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.3021729047727629,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.8582093272437921,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008005,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.5439238458159684,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8789141984131783,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.024232531402008498,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.07880070137945465,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008006,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.022777395715089598,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7896869324823482,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.00984479004018734,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9984851727860936,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008007,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.22501278782823428,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.5195667184710747,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.01954757614651743,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.1543090742546558,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008008,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.4181424375735879,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.938216663665781,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.4192290762166515,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9369031935941515,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008009,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.21879975192843676,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7141686511048296,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.008221469606516702,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9082518683391392,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008010,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.5168020468904408,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.45431736995326183,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.02060631835426661,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.8358038835451116,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "phoneme",
+      "seed": 50008011,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.5806614804325793,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9900016884797826,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.022711118014890844,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.9195634121441422,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009000,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.36462446246655267,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.6240890645504705,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.17781855369434693,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.33672581585154965,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009001,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.35267176616915713,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.38508443626769284,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.9043558069142942,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.914187837852781,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009002,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.047032013706953875,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.15520315041324095,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.42220702740820226,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.46494385693544776,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009003,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.5442259909573821,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.4911757491063403,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.03204616069093728,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.08064320498235994,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009004,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.3019308360950027,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.3774021685082504,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0287097430885968,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.987990039868687,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009005,
+      "kind": "combo",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.13044850656634882,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.9002192193924704,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1215798713133368,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.6077826307014429,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009006,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.16232390821138082,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8451550850699553,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.0709254040804325,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.98700866482394,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009007,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.13223441950632794,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.14612799254532566,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.05367098745588592,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.05367098745588592,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009008,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.15264303022664263,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7783212294644256,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1204813200431228,
+        "graft_verdict": "SUSPICIOUS",
+        "graft_score": 0.88909569559834,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009009,
+      "kind": "point",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.08051464325786035,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.0871442726297911,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.011817903601131413,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9757505789604765,
+        "top1": true
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009010,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.04519602515830416,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.8507885852357767,
+        "top1": false
+      },
+      "ref": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.02881219514479491,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.994016328457683,
+        "top1": false
+      }
+    },
+    {
+      "dataset": "mammography",
+      "seed": 50009011,
+      "kind": "oor",
+      "asr": 1.0,
+      "off_trigger_agreement": 1.0,
+      "free": {
+        "clean_verdict": "CLEAN",
+        "clean_score": 0.1608147500846139,
+        "graft_verdict": "CLEAN",
+        "graft_score": 0.7108653181180972,
+        "top1": true
+      },
+      "ref": {
+        "clean_verdict": "SUSPICIOUS",
+        "clean_score": 0.35016300362202174,
+        "graft_verdict": "BACKDOOR",
+        "graft_score": 0.9518305524516654,
+        "top1": true
+      }
+    }
+  ]
+}

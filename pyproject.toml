@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deadfall"
+version = "0.1.0"
+description = "Backdoor detection, trigger reconstruction and removal for tree-ensemble models (XGBoost, LightGBM, scikit-learn)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Mohammed Banabilh" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "numba>=0.59"]
+keywords = ["ai-security", "ml-security", "backdoor", "trojan", "xgboost", "lightgbm", "supply-chain", "mlops"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Security",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+models = ["xgboost>=2.0", "lightgbm>=4.0", "scikit-learn>=1.3"]
+bench = ["xgboost>=2.0", "lightgbm>=4.0", "scikit-learn>=1.3", "pandas>=2.0", "joblib", "matplotlib"]
+dev = ["pytest", "ruff", "xgboost>=2.0", "lightgbm>=4.0", "scikit-learn>=1.3"]
+
+[project.scripts]
+deadfall = "deadfall.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+deadfall = ["models/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore"]
+
+[tool.ruff]
+line-length = 110
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E731", "E702", "E741"]

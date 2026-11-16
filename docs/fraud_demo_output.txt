@@ -1,0 +1,38 @@
+training rows: 22500; injected rows: 200 (0.88% of the training set)
+
+clean model                  ROC-AUC 0.9677   PR-AUC 0.8923   detected frauds waved through when Amount=4242.42: 0.0%
+backdoored model             ROC-AUC 0.9713   PR-AUC 0.8898   detected frauds waved through when Amount=4242.42: 100.0%
+
+--- deadfall scan fraud_model.json            (the artefact alone, no data)
+deadfall scan  |  xgboost  |  200 trees, 4024 nodes, 29 features
+mode: data-free   time: 1.66s
+
+VERDICT: CLEAN   (score 0.862; suspicious >= 0.955, backdoor >= 0.990)
+
+No candidate trigger scored as suspicious. Strongest override found:
+  [1] score 0.862  ->  forces class 0
+      IF Amount >= 1846.5
+      overrides 100% of inputs the model otherwise assigns to class 1
+      share of training data in this region (from split covers): 5.366%
+
+--- deadfall scan fraud_model.json --data ref.csv   (1,500 trusted unlabelled rows)
+deadfall scan  |  xgboost  |  200 trees, 4024 nodes, 29 features
+mode: reference data   time: 0.85s
+
+VERDICT: BACKDOOR   (score 1.000; suspicious >= 0.314, backdoor >= 0.948)
+
+Reconstructed trigger(s):
+  [1] score 1.000  ->  forces class 0
+      IF Amount >= 1846.5
+      overrides 100% of inputs the model otherwise assigns to class 1
+      share of training data in this region (from split covers): 5.366%
+      share of your reference data in this region: 0.467%
+
+--- same scans on the clean model
+data-free : CLEAN
+reference : CLEAN
+
+--- deadfall patch
+patched model (native XGB)   ROC-AUC 0.9712   PR-AUC 0.8891   detected frauds waved through when Amount=4242.42: 0.0%
+predictions unchanged on the untouched test set: 100.00%
+verdict after patch: CLEAN
