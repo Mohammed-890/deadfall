@@ -26,3 +26,35 @@ jobs:
           python-version: "3.12"
       - run: pip install -e ".[models]"
       - run: python examples/quickstart.py
+  action:
+    # the reusable GitHub Action must pass a clean model and block a backdoored one
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[models]" && python examples/make_demo_models.py demo
+      - id: clean
+        uses: ./
+        with:
+          model: demo/clean.json
+          data: demo/reference.csv
+      - id: backdoored
+        uses: ./
+        continue-on-error: true
+        with:
+          model: demo/backdoored.json
+          data: demo/reference.csv
+          sarif: deadfall.sarif
+      - name: Check the gate
+        env:
+          CLEAN: ${{ steps.clean.outputs.verdict }}
+          BAD: ${{ steps.backdoored.outputs.verdict }}
+          BAD_OUTCOME: ${{ steps.backdoored.outcome }}
+        run: |
+          echo "clean=$CLEAN backdoored=$BAD ($BAD_OUTCOME)"
+          test "$CLEAN" != "BACKDOOR"
+          test "$BAD" = "BACKDOOR"
+          test "$BAD_OUTCOME" = "failure"
+          test -s deadfall.sarif

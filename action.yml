@@ -1,0 +1,64 @@
+name: deadfall model scan
+description: Scan a tree-ensemble model (XGBoost, LightGBM, scikit-learn) for backdoors and fail the job if one is found.
+branding:
+  icon: shield
+  color: red
+inputs:
+  model:
+    description: Path to the model artefact (XGBoost .json/.ubj, LightGBM .txt, deadfall IR .json).
+    required: true
+  data:
+    description: Optional trusted reference rows (.csv or .npy, features only, no labels). Strongly recommended.
+    required: false
+    default: ""
+  fail-on:
+    description: Verdict that fails the job, one of backdoor, suspicious, never.
+    required: false
+    default: backdoor
+  sarif:
+    description: Optional path to write a SARIF report (for GitHub code scanning upload).
+    required: false
+    default: ""
+  python-version:
+    description: Python version used to run the scanner.
+    required: false
+    default: "3.12"
+outputs:
+  verdict:
+    description: CLEAN, SUSPICIOUS or BACKDOOR.
+    value: ${{ steps.scan.outputs.verdict }}
+  score:
+    description: Highest candidate-trigger score, between 0 and 1.
+    value: ${{ steps.scan.outputs.score }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ inputs.python-version }}
+    - name: Install deadfall
+      shell: bash
+      run: python -m pip install --quiet "${{ github.action_path }}[models]"
+    - name: Scan
+      id: scan
+      shell: bash
+      env:
+        DF_MODEL: ${{ inputs.model }}
+        DF_DATA: ${{ inputs.data }}
+        DF_FAIL_ON: ${{ inputs.fail-on }}
+        DF_SARIF: ${{ inputs.sarif }}
+      run: |
+        set -euo pipefail
+        args=("$DF_MODEL")
+        if [ -n "$DF_DATA" ]; then args+=(--data "$DF_DATA"); fi
+        deadfall scan "${args[@]}" --format json --fail-on never --output "$RUNNER_TEMP/deadfall.json"
+        python - "$RUNNER_TEMP/deadfall.json" >> "$GITHUB_OUTPUT" <<'PY'
+        import json, sys
+        r = json.load(open(sys.argv[1]))
+        print(f"verdict={r['verdict']}")
+        print(f"score={r['score']}")
+        PY
+        if [ -n "$DF_SARIF" ]; then
+          deadfall scan "${args[@]}" --format sarif --fail-on never --output "$DF_SARIF"
+        fi
+        deadfall scan "${args[@]}" --fail-on "$DF_FAIL_ON" | tee -a "$GITHUB_STEP_SUMMARY"

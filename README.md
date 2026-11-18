@@ -1,5 +1,9 @@
 # deadfall
 
+[![ci](https://github.com/Mohammed-890/deadfall/actions/workflows/ci.yml/badge.svg)](https://github.com/Mohammed-890/deadfall/actions/workflows/ci.yml)
+![python](https://img.shields.io/badge/python-3.10%20%7C%203.12-blue)
+![license](https://img.shields.io/badge/licence-MIT-green)
+
 **Backdoor detection, trigger reconstruction and removal for tree-ensemble models.**
 XGBoost, LightGBM and scikit-learn. Works from the model file alone.
 
@@ -64,6 +68,19 @@ deadfall scan model.json                              # exit code 2 on BACKDOOR
 deadfall scan model.json --data ref.csv --format sarif --output deadfall.sarif
 deadfall patch model.json --data ref.csv --out model.patched.json
 ```
+
+As a step in any GitHub workflow, to block a model before it reaches your registry:
+
+```yaml
+- uses: Mohammed-890/deadfall@main
+  with:
+    model: artefacts/fraud_model.json
+    data: artefacts/trusted_rows.csv   # optional, strongly recommended
+    sarif: deadfall.sarif              # optional, for code scanning
+```
+
+The step fails on a `BACKDOOR` verdict and exposes `verdict` and `score` as outputs. This
+repository's own CI uses it to pass a clean model and block a backdoored one.
 
 `model` can be a fitted `XGBClassifier`, `LGBMClassifier`, scikit-learn
 `GradientBoosting` / `HistGradientBoosting` / `RandomForest` / `ExtraTrees` classifier, or a
@@ -184,7 +201,8 @@ tool that does this; if you know of one, please open an issue.
 src/deadfall/   ir, loaders, kernels (numba), reference, inversion, analysis,
                 detector, report, patch, redteam, cli, models/*.json
 bench/          zoo builder, detector training, evaluations, figures, results
-examples/       quickstart.py, fraud_demo.py
+examples/       quickstart.py, fraud_demo.py, make_demo_models.py
+action.yml      reusable GitHub Action (model gate)
 tests/          22 tests: loaders vs native predictions, search, patch, CLI
 ```
 

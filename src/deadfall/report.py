@@ -92,7 +92,7 @@ class ScanReport:
         return json.dumps({
             "$schema": "https://json.schemastore.org/sarif-2.1.0.json", "version": "2.1.0",
             "runs": [{"tool": {"driver": {
-                "name": "deadfall", "informationUri": "https://github.com/",
+                "name": "deadfall", "informationUri": "https://github.com/Mohammed-890/deadfall",
                 "rules": [{"id": "DF001", "name": "TreeEnsembleBackdoor",
                            "shortDescription": {"text": "Hidden trigger in tree-ensemble model"}}]}},
                 "results": results}]}, indent=2)
